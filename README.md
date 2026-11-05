@@ -9,6 +9,7 @@ and under one licence.
 |---|---|
 | [`validatecsv/`](validatecsv/) | One RFC 4180 CSV validator implemented four times — Ragel-generated C and C++, C# on .NET 8, and static-musl Rust — plus a shared sample corpus of edge cases. |
 | [`qr/`](qr/) | QR "tape" encoder/decoder in C++, over a Reed–Solomon codec (`librs/`) with CRC framing. |
+| [`parsemail/`](parsemail/) | A console mail parser: reads RFC 5322 message files from a directory and extracts them to CSV. C# on .NET, using MimeKit and CsvHelper. |
 | [`rxengine/`](rxengine/) | A prescription-schedule parser and inventory calculator. ANTLR 4 grammar, C# on .NET 8. Reads `.rx` files describing drugs, doses and purchases, and reports remaining quantity and refill dates. |
 
 ## Licence
