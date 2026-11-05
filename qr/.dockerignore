@@ -1,0 +1,30 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+docs/
+
+# Build artifacts
+*.o
+*.a
+src/qrtape/qrtapemake
+src/qrtape/qrtaperead
+
+# Test/output files
+*.ppm
+*.pdf
+*.dat
+src/qrtape/test_input.*
+src/qrtape/test_recovered.*
+src/qrtape/*_recovered*
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Docker
+Dockerfile
+.dockerignore

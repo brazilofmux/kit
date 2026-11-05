@@ -1,0 +1,23 @@
+# What every implementation must say about each sample: valid or invalid,
+# loose (default) and strict (-s). The builder job checks all four against
+# this file, so a new sample needs a line here.
+#
+# The last record may or may not end in a line break (RFC 4180 2.2): end of
+# input ends it, and it is checked like any other. A file that ends inside an
+# open quote, or on a CR with no LF, is invalid.
+#
+# file                            loose    strict
+bad.csv                           invalid  invalid
+blank_lines_mismatch.csv          invalid  invalid
+cr_alone_invalid.csv              invalid  invalid
+crlf_good.csv                     valid    valid
+crlf_no_final_newline.csv         valid    valid
+dangling_cr.csv                   invalid  invalid
+empty_field_at_eof.csv            valid    valid
+escaped_quote_at_eof.csv          valid    valid
+good.csv                          valid    valid
+no_final_newline.csv              valid    valid
+short_last_line.csv               invalid  invalid
+strict_invalid.csv                valid    invalid
+unterminated_after_escape.csv     invalid  invalid
+unterminated_quote.csv            invalid  invalid

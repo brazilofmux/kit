@@ -1,0 +1,9 @@
+[package]
+name = "validatecsv"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+memmap2 = "0.5"
+clap = "4.0"
+num_cpus = "1.15"

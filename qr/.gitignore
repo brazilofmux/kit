@@ -1,0 +1,6 @@
+src/qrtape/qrtapemake
+src/qrtape/qrtaperead
+librs/librs.a
+*.ppm
+*.pdf
+*.o
